@@ -783,7 +783,7 @@ class MeteoMain(Screen):
         url2 = '938848'
         if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Config/Location_id"):	
              url2=open("/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Config/Location_id").read()				
-        url = url+url2+'%20AND%20u=%22c%22'
+        url = url+url2+'&u=c'
         return url
 
     def delTimer(self):
