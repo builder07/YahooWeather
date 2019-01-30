@@ -779,8 +779,8 @@ class MeteoMain(Screen):
         return localfile
 
     def get_Url(self):
-        url = 'https://query.yahooapis.com/v1/public/yql?q=select%20%2A%20from%20weather.forecast%20where%20woeid='
-        url2 = '721943'
+        url = 'https://weather-ydn-yql.media.yahoo.com/forecastrss='
+        url2 = '938848'
         if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Config/Location_id"):	
              url2=open("/usr/lib/enigma2/python/Plugins/Extensions/YahooWeather/Config/Location_id").read()				
         url = url+url2+'%20AND%20u=%22c%22'
